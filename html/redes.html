@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Industriais - PROFINET</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+    
+        <nav>
+          <p class="titulo">AUTOMAÇÃO E PROJETOS</p>
+          <a href="../index.html">Supervisório</a>
+          <a href="./piramide.html">Pirâmide</a>
+          <a href="./clp.html">CLP</a>
+          <a href="./drives.html">Drives</a>
+          <a href="./redes.html" class="ativa">Redes Industriais</a>
+          <a href="./designThinking.html">Design Thinking</a>
+          <a href="./gestaoProjetos.html">Gestão de Projetos</a>
+          <a href="./contato.html">Nossa Equipe</a>
+      </nav>
+      
+      <details class="mobile">
+          <summary>=</summary>
+          <div class="menuMobile">
+              <a href="../index.html">Supervisório</a>
+              <a href="./piramide.html">Pirâmide</a>
+              <a href="./clp.html">CLP</a>
+              <a href="./drives.html">Drives</a>
+              <a href="./redes.html">Redes Industriais</a>
+              <a href="./gestaoProjetos.html">Gestão de Projetos</a>
+              <a href="./designThinking.html">Design Thinking</a>
+              <a href="./contato.html">Nossa Equipe</a>
+          </div>
+      </details>
+      </header>
+
+    <main>
+        <div class="cima">
+            <div>
+                <div class="azulzinho">COMUNICAÇÃO INDUSTRIAL</div>
+                <h1>Redes Industriais e PROFINET</h1>
+                <p>As redes industriais conectam equipamentos e permitem a troca de informações necessárias para controlar e monitorar processos automatizados. Entre essas tecnologias, o PROFINET se destaca por utilizar Ethernet e oferecer comunicação entre controladores e dispositivos industriais.</p>
+                <p>Desenvolvido pela organização PROFIBUS & PROFINET International (PI), o PROFINET é utilizado em aplicações que exigem troca de dados, sincronização e diagnóstico dos equipamentos de uma planta industrial.</p>
+            </div>
+
+            <img src="../img/prof.png" alt="" class="image">
+            <!--  -->
+        </div>
+
+        <section>
+            <div class="secao_cima">
+                <div class="azulzinho">CONCEITO</div>
+                <h2>O que é o PROFINET?</h2>
+                <p class="espacoP">O PROFINET é um padrão de comunicação industrial baseado em Ethernet. Ele permite conectar controladores, como CLPs, a dispositivos de campo, como módulos de entradas e saídas, sensores, atuadores e inversores de frequência.</p>
+                <p class="espacoP">Diferentemente de uma rede Ethernet utilizada apenas para navegação na internet, uma rede PROFINET pode ser configurada para atender às exigências de tempo e confiabilidade de processos industriais. Sua aplicação depende dos dispositivos, da configuração e da infraestrutura da rede.</p>
+            </div>
+
+            <div class="listaRedes">
+                <div class="itemRedes">
+                    <div class="numero">01</div>
+                    <h3>Ethernet industrial</h3>
+                    <p>Utiliza uma infraestrutura Ethernet com cabos, conectores e equipamentos apropriados para as condições de operação industrial.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">02</div>
+                    <h3>Comunicação em tempo real</h3>
+                    <p>Permite atualizar dados de processo em intervalos definidos, atendendo às necessidades de velocidade e determinismo de diferentes aplicações.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">03</div>
+                    <h3>Integração de equipamentos</h3>
+                    <p>Conecta dispositivos compatíveis para que o controlador possa receber informações e enviar comandos sem depender de uma ligação individual para cada dado</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">04</div>
+                    <h3>Diagnóstico integrado</h3>
+                    <p>Disponibiliza informações sobre o estado dos dispositivos e possíveis problemas de comunicação, facilitando a identificação de falhas e a manutenção.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="secao_cima">
+                <div class="azulzinho">FUNCIONAMENTO</div>
+                <h2>Como funciona a comunicação?</h2>
+                <p>Em uma aplicação típica, o CLP atua como controlador da comunicação com os dispositivos de campo. Ele troca dados com os equipamentos configurados, executa a lógica do programa e atualiza as saídas de acordo com o processo.</p>
+            </div>
+
+            <div class="listaRedes">
+                <div class="itemRedes">
+                    <div class="numero">01</div>
+                    <h3>IO Controller</h3>
+                    <p>Geralmente é o CLP responsável por controlar a comunicação cíclica com os dispositivos de entrada e saída e utilizar os dados recebidos na execução do programa.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">02</div>
+                    <h3>IO Device</h3>
+                    <p>É o dispositivo de campo que fornece ou recebe dados do controlador, como módulos de entradas e saídas, equipamentos de medição e outros dispositivos compatíveis.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">03</div>
+                    <h3>IO Supervisor</h3>
+                    <p>É uma estação de engenharia ou supervisão que pode acessar informações dos dispositivos para configuração, monitoramento e diagnóstico, conforme suas permissões.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">04</div>
+                    <h3>Troca de dados</h3>
+                    <p>O controlador recebe valores de entrada, processa as condições programadas e envia os comandos necessários aos dispositivos de saída.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="secao_cima">
+                <div class="azulzinho">TIPOS DE COMUNICAÇÃO</div>
+                <h2>RT, IRT e comunicação acíclica</h2>
+                <p>O PROFINET possui mecanismos diferentes para atender aplicações com necessidades variadas de comunicação. A escolha depende da precisão temporal exigida pelo processo.</p>
+            </div>
+
+            <div class="listaRedes">
+                <div class="itemRedes">
+                    <div class="numero">01</div>
+                    <h3>PROFINET RT</h3>
+                    <p>O Real Time utiliza mecanismos de comunicação em tempo real para transmitir dados de entrada e saída com menor atraso e comportamento mais previsível do que uma comunicação Ethernet comum sem priorização adequada. É utilizado em muitas aplicações de automação industrial.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">02</div>
+                    <h3>PROFINET IRT</h3>
+                    <p>O Isochronous Real Time é destinado a aplicações que exigem sincronização precisa, como determinados sistemas de controle de movimento. Ele utiliza mecanismos específicos de sincronização e planejamento da comunicação.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">03</div>
+                    <h3>Comunicação cíclica</h3>
+                    <p>Transporta periodicamente os dados de processo entre o controlador e os dispositivos, como estados de sensores, posições e comandos de acionamento.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">04</div>
+                    <h3>Comunicação acíclica</h3>
+                    <p>É utilizada para tarefas sob demanda, como leitura de parâmetros, configuração e consulta de diagnósticos. Complementa a troca periódica dos dados de processo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="secao_cima">
+                <div class="azulzinho">INFRAESTRUTURA</div>
+                <h2>Topologias e equipamentos</h2>
+                <p>A rede PROFINET pode ser organizada de diferentes maneiras. A topologia escolhida influencia a instalação, a expansão da rede e a forma de localizar falhas.</p>
+            </div>
+
+            <div class="listaRedes">
+                <div class="itemRedes">
+                    <div class="numero">01</div>
+                    <h3>Topologia em linha</h3>
+                    <p>Os dispositivos são conectados em sequência. Pode reduzir a quantidade de cabos até o switch, mas uma interrupção em um trecho pode afetar os equipamentos seguintes, dependendo da instalação.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">02</div>
+                    <h3>Topologia em estrela</h3>
+                    <p> Os dispositivos se conectam a um switch central. Facilita a organização e a expansão, embora uma falha no equipamento central possa afetar vários dispositivos.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">03</div>
+                    <h3>Topologia em anel</h3>
+                    <p>Os equipamentos formam um circuito fechado. Quando configurada com mecanismos de redundância compatíveis, pode permitir a recuperação da comunicação apósdeterminadas falhas de conexão.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <div class="numero">04</div>
+                    <h3>Cabos e switches</h3>
+                    <p> Cabos Ethernet industriais, conectores adequados e switches compatíveis ajudam a manter a qualidade da conexão em ambientes sujeitos a vibração interferência e condições severas. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="baixo">
+            <div>
+                <div class="azulzinho">APLICAÇÃO PRÁTICA</div>
+                <h2>PROFINET na bancada de automação</h2>
+                <p class="espacoP"> Em uma bancada industrial, um CLP compatível pode trocar dados por PROFINET com módulos de entradas e saídas remotas ou inversores de frequência compatíveis. O controlador recebe sinais dos sensores, executa o programa e envia comandos aos equipamentos. </p>
+                <p class="espacoP"> Para que a comunicação funcione, os dispositivos precisam ser compatíveis e estar configurados corretamente, com nomes de estação, endereços IP e parâmetros de rede adequados à arquitetura utilizada. </p>
+            </div>
+
+            <div class="final">
+                <h3>Diagnóstico e manutenção</h3>
+                <p> Quando um dispositivo deixa de comunicar, podem surgir falhas relacionadas ao cabo, ao switch, à alimentação, à configuração ou ao próprio equipamento. As ferramentas de diagnóstico ajudam a identificar a origem do problema e reduzir o tempo de parada do processo.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="secao_cima">
+                <div class="azulzinho">SEGURANÇA E CONFIABILIDADE</div>
+                <h2>Cuidados na instalação</h2>
+                <p>Uma rede industrial confiável depende tanto do protocolo quanto de uma instalação adequada e de uma configuração bem planejada. </p>
+            </div>
+
+            <div class="listaRedes">
+                <div class="itemRedes">
+                    <h3>Separação de redes</h3>
+                    <p>A segmentação da rede e o controle de acesso ajudam  a limitar comunicações desnecessárias e a reduzir riscos de segurança. </p>
+                </div>
+
+                <div class="itemRedes">
+                    <h3>Configuração correta</h3>
+                    <p>Nomes dos dispositivos, endereços IP e parâmetros precisam corresponder ao projeto e à configuração do controlador.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <h3>Manutenção preventiva</h3>
+                    <p>Inspecionar cabos, conectores, alimentação e indicadores dos equipamentos ajuda a prevenir falhas de comunicação.</p>
+                </div>
+
+                <div class="itemRedes">
+                    <h3>Monitoramento</h3>
+                    <p>Acompanhar diagnósticos, alarmes e estados da rede facilita a identificação de problemas antes que provoquem paradas prolongadas.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Equipe Supervisório &copy; &trade; <br> E um agradecimento especial para: José "Maçaneiro" Carlos "Filho" Izabeli "Souza" Adriana "Adolfo" e SENAI</p>
+    </footer>
+
+</body>
+</html>
